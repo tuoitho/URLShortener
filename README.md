@@ -1,46 +1,46 @@
-# URL Shortener
+# URL Shortener 🔗
+[![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/flask-v2.3.3-green.svg)](https://flask.palletsprojects.com/)
 
-A simple URL shortener web application built with Flask and SQLite. This application allows users to convert long URLs into short, easily shareable links.
+## 📋 Overview
+Simple URL shortener built with Flask that converts long URLs into memorable short links.
 
-## Features
+## ⚡ Features
+- Generate 6-character short codes
+- Copy to clipboard functionality
+- SQLite database storage
+- Bootstrap 5 responsive UI
 
-- Shorten long URLs to 6-character codes
-- Copy shortened URLs to clipboard with one click
-- Permanent storage using SQLite database
-- Clean and responsive Bootstrap UI
+## 🔧 Tech Stack
+- **Backend**: Flask, SQLAlchemy
+- **Frontend**: HTML, JavaScript, Bootstrap 5
+- **Database**: SQLite
 
-## Technologies Used
+## 🚀 Quick Start
 
-- Backend: Flask, SQLAlchemy
-- Frontend: HTML, JavaScript, Bootstrap 5
-- Database: SQLite
+### Prerequisites
+- Python 3.8+
+- Git
 
-## Setup and Installation
+### Installation
 
-1. Clone the repository:
-```sh
-git clone <your-repo-url>
+```bash
+# Clone repository
+git clone https://github.com/yourusername/url-shortener.git
 cd url-shortener
 
-2. Create a virtual environment:
-```sh
+# Set up virtual environment
 python -m venv venv
-source venv/bin/activate
+.\venv\Scripts\activate
 
-3. Install the required packages:
-```sh
+# Install dependencies
 pip install -r requirements.txt
 
-4. Run the application:
-```sh
+# Initialize database
+python
+>>> from app import db
+>>> db.create_all()
+>>> exit()
+
+# Start server
 python app.py
-
-5. Open your browser and navigate to `http://localhost:5000` to view the application.
-
-## Project Structure
-
-├── app.py              # Main application file
-├── instance/          
-│   └── urls.db        # SQLite database
-└── templates/
-    └── index.html     # Frontend template
